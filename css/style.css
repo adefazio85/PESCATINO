@@ -911,12 +911,26 @@
 
 
 @media screen and (max-width:1000px){
+
+    /* .pagExcursiones{
+        background-color:rgb(156, 156, 156);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } */
     
+    .excursiones {
+        flex-direction: column;
+    }
+
     .excurImg img{
         border-bottom-left-radius: 0px;
         border-top-right-radius: 5px;
     }
     .excurDatos{
+        /* background-color: blue; */
         width: 100%;
     }
 
