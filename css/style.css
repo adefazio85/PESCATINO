@@ -10,6 +10,8 @@
     list-style:none;
 }
 
+
+/*SOBREESCRITURA DE CLASES DE BOOSTRAP QUE MODIFICABAN MI PROYECTO*/
 a{
     text-decoration: none;
 }
@@ -18,9 +20,10 @@ a{
     margin-top: 0;
     margin-bottom: 0;
     line-height:normal;
-    /* font-weight: 500;
-    line-height: 1.2; */
 }
+
+/*FIN SOBREESCRITURA DE CLASES DE BOOSTRAP QUE MODIFICABAN MI PROYECTO*/
+
 
 /* ESTRUCTURA GENERAL DEL SITIO WEB*/
 .estructuraBase{
