@@ -511,9 +511,6 @@
 
 
 
-
-
-
 /* PÁGINA EXCURSIONES */
 
 .pagExcursiones{
@@ -572,10 +569,6 @@
 
 
 /* FIN PÁGINA EXCURSIONES */
-
-
-
-
 
 
 
@@ -698,6 +691,81 @@
 
 
 
+/* PÁGINA GALERIA */
+
+.galeria{
+    background-color:rgb(156, 156, 156) ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 17vw ;
+    padding: 2px;
+}
+
+.img-gal{
+    width: 100%;
+    height: 100%;
+}
+
+.img-gal input{
+    display: none;
+}
+
+.img-gal label img{
+    padding: 4px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-gal img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-gal-03{
+    grid-row: span 2;
+}
+
+.img-gal-05{
+    grid-column: span 2;
+    grid-row: span 2;
+}   
+
+.img-gal-11{
+    grid-column: span 2;
+    grid-row: span 2;
+}  
+
+.img-gal:hover{
+    padding: 1.5px;
+}
+
+.img-gal input:checked ~ label{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 84px;
+    left: 0px;
+    width: 100vw;
+    height: calc(100vh - 84px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-gal input:checked ~ label img{
+    display: block;
+    object-fit:contain;
+    height: 90%;
+}
+
+
+/* FIN PÁGINA GALERIA */
+
+
+
 /*APLICACIÓN MEDIA QUERIE ESTRUCTURA GENERAL*/
 
 
@@ -768,7 +836,7 @@
         top: 70px;
         left: 0;
         width: 100%;
-        height: 35vh;
+        height: 50vh;
         background-color: rgba(55, 55, 55, 0.9);
         box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.44);
         -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.44);
@@ -912,15 +980,6 @@
 
 @media screen and (max-width:1000px){
 
-    /* .pagExcursiones{
-        background-color:rgb(156, 156, 156);
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    } */
-    
     .excursiones {
         flex-direction: column;
     }
@@ -1175,3 +1234,112 @@
     
     
 /*FIN APLICACIÓN MEDIA QUERIE PAGINA CONTACTENOS*/
+
+
+/*APLICACIÓN MEDIA QUERIE PAGINA GALERIA*/
+
+
+@media screen and (max-width:1000px){
+
+    .galeria{
+        background-color:rgb(156, 156, 156) ;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 22vw ;
+    }
+    
+    
+    .img-gal{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img-gal input{
+        display: none;
+    }
+    
+    .img-gal label img{
+        padding: 5px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .img-gal img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .img-gal-03{
+        grid-row: span 1;
+    }
+    
+    .img-gal-13{
+        grid-row: span 2;
+    } 
+
+    .img-gal input:checked ~ label{
+        top: 90px;
+        height: calc(100vh - 90px);
+    }
+    
+}
+
+@media screen and (max-width:700px){
+
+    .galeria{
+        background-color:rgb(156, 156, 156) ;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-auto-rows: 33vw ;
+    }
+    
+    
+    .img-gal{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img-gal input{
+        display: none;
+    }
+    
+    .img-gal label img{
+        padding: 5px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .img-gal img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .img-gal-03{
+        grid-row: span 1;
+    }
+
+    .img-gal-08{
+        grid-column: span 2;
+    } 
+
+
+    .img-gal-17{
+        grid-column: span 2;
+    }
+
+    .img-gal input:checked ~ label{
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+    
+}
+    
+/*FIN APLICACIÓN MEDIA QUERIE PAGINA GALERIA*/
