@@ -764,7 +764,6 @@ h6 {
       grid-row: span 2; } }
 
 /*FIN APLICACIÓN MEDIA QUERIE PAGINA GALERIA*/
-/* PÁGINA CONTACTENOS */
 .pagContactenos {
   width: 100%;
   height: calc(100vh - 80px - 40px);
