@@ -1,0 +1,180 @@
+.equiGeneral {
+    background-color:$colorPescatino4;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    div{
+        width: 97VW;
+        height: 20vh;
+        box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+        -webkit-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+        -moz-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+        & :hover{
+            background-color: transparent;
+        }
+        h2{
+            width: 100%;
+            height: 100%;
+            background-color: $colorPescatino6T;
+            font-family: 'Montserrat';
+            font-size: 4rem; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            a{
+                color: $colorPescatino5T;
+            }  
+        }
+    }
+    .tituloBait{
+        background-image: url(../images/baitcasting/fondobait.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .tituloSpinning{
+        background-image: url(../images/spinning/fondospinning.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .tituloLance{
+        background-image: url(../images/lance/fondolance.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .tituloFly{
+        background-image: url(../images/fly/fondofly.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+}
+
+.equiCategorias{
+    background-color:$colorPescatino4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    h3{
+        width: 95vw;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-family: 'Montserrat';
+        font-size: 3rem;  
+        font-style: italic;
+        font-weight: 600;
+        color: $colorPescatino2;
+    }
+    div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        div{
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30vw;
+            h4{
+                position: relative;
+                bottom: 40px;
+                left: 5px;
+                font-family: 'Montserrat';
+                font-size: 2rem; 
+                font-style: italic;
+                font-weight: 600;
+            }   
+            img{
+                border-radius: 5px;
+                box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+                -webkit-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+                -moz-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+                width: 30vw;
+                height: 30vw;
+            }
+        }
+    }
+}
+
+/* FIN PÁGINA EQUIPOS */
+
+
+    /*APLICACIÓN MEDIA QUERIE PAGINA EQUIPOS*/
+
+
+    @media screen and (max-width:1000px){
+    
+        .equiGeneral {
+            height: calc(100vh - 90px);
+            div{
+                h2{
+                    font-size: 3rem; 
+                }
+            }
+        }
+        
+        .equiCategorias{
+            h3{
+                font-size: 2rem;  
+            }
+            div{
+                div{
+                    h4{
+                        font-size: 2rem; 
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:700px){
+    
+    
+        .equiGeneral {
+            height: calc(100vh - 70px);
+            div{
+                h2{
+                    font-size: 2.5rem; 
+                }
+            }
+        }
+        
+    
+        .equiCategorias{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 70px;
+            h3{
+                text-align: center;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                div{
+                    flex-direction: column;
+                    width: 95vw;
+                    img{
+                        width: 95%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    /*FIN APLICACIÓN MEDIA QUERIE PAGINA EQUIPOS*/

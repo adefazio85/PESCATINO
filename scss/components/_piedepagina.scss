@@ -1,0 +1,76 @@
+
+.pieDePagina{
+    background-color: $colorPescatino3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height:40px;
+    box-shadow: 0px 25px 21px -30px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 25px 21px -30px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 25px 21px -30px rgba(0,0,0,0.75) inset;
+    .redes{
+        width:120px;
+        height: 100%;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        a{
+            height: 40px;
+            img{
+                box-sizing: border-box;
+                padding: 5px;
+                height :100%;
+                display: block;
+            }
+        }
+    }
+    .copy{
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content:space-around;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 15px;
+                height: 15px;
+            }
+            p{
+                margin: 0px;
+                margin-right: 35px;
+                margin-left: 10px;
+                font-family: 'Montserrat';
+                font-size: 0.8rem;
+                text-align: center;
+            }
+        }
+        
+    }
+}
+
+
+/*APLICACIÓN MEDIA QUERIES PIE DE PAGINA*/
+
+
+
+@media screen and (max-width:700px) {
+
+    .pieDePagina{
+        .redes{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .copy{
+            display: none;
+        }
+    }
+
+}
+
+/*FIN APLICACIÓN MEDIA QUERIES PIE DE PAGINA*/
+
+

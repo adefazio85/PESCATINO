@@ -1,0 +1,186 @@
+
+/* PÁGINA EVENTOS */
+
+.pagEventos{
+    background-color:$colorPescatino4 ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .evenTitle{
+        width: 95vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        h2{
+            width: 100%;
+            font-family: 'Montserrat';
+            font-size: 2rem;
+            color: $colorPescatino2;
+            font-style: italic;
+            font-weight: 700;
+            text-align: left;
+        }
+    }
+    .evento{
+        background-color: $colorPescatino2;
+        width: 95vw;
+        height: 32vw;
+        display: flex;
+        margin-bottom: 2vw;
+        border-radius: 5px;
+        box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+        -webkit-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+        -moz-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.37);
+        .evenFoto{
+            width:48vw;
+            height:32vw;
+            position: relative;
+            img{
+                display: block;
+                width: 100% ;
+                height: 100%;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                object-fit:cover;
+            }
+            h3{
+                padding-left: 10px;
+                background-color: $colorPescatino1T3;
+                border-bottom-left-radius: 5px;
+            
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+                font-family: 'Montserrat';
+                font-size: 2vw; 
+                font-weight: 600;
+                font-style: italic;
+                color: $colorPescatino4;
+            }
+        }
+        .evenDatos{
+            width:47vw;
+            height:100%;
+            position: relative;
+            .evenFecha {
+                padding: 20px;
+                width: 100%;
+                p{
+                    text-align: right;
+                    font-family: 'Montserrat';
+                    font-size: 1vw;
+                    color: $colorPescatino4; 
+                }
+            }
+            .evenInfo{
+                padding-left:2.2vw;
+                padding-right:2.2vw ;
+                width: 100%;
+                height: 25%;
+                p{
+                    font-family: 'Montserrat';
+                    font-size: 1.5vw; 
+                    color: $colorPescatino4;
+                    height: 100%;
+                    overflow:auto;
+                }
+            }
+            .evenMapa{
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                height: 65%;
+                iframe{
+                    display: block;
+                    padding:2.2vw;
+                    width: 100%;
+                    height: 100%;
+                }
+            }    
+        }
+        
+    }
+
+}
+
+/* FIN PÁGINA EVENTOS */
+
+
+
+
+
+/*APLICACIÓN MEDIA QUERIE PAGINA EVENTOS*/
+
+
+@media screen and (max-width:1000px){
+
+    .pagEventos{
+        .evenTitle{
+            h2{
+                text-align: center;
+            } 
+        }
+        .evento{
+            flex-direction: column;
+            height: 96vw;
+            .evenFoto{
+                width:95vw;
+                height:64vw;
+                img{
+                    border-top-right-radius: 5px;
+                    border-bottom-left-radius: 0px;
+                }
+                h3{
+                    border-bottom-left-radius: 0px;
+                    text-align: center;
+                    font-size: 1.2rem; 
+                }
+            }
+            .evenDatos{
+                width:95vw;
+                height: 32vw;
+                display: grid;
+                grid-template-areas: 
+                    "evenFecha evenMapa"
+                    "evenInfo evenMapa"
+                ;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 3vw 29vw;
+                .evenFecha {
+                    padding: 10px;
+                    grid-area: evenFecha;
+                    p{
+                        text-align: right;
+                        font-size: 1rem;
+                    }
+                }
+                .evenInfo{
+                    padding: 20px;
+                    grid-area: evenInfo;
+                    height: 100%;
+                    p{
+                        font-size: 1rem; 
+                    }
+                }
+                .evenMapa{
+                    position: absolute;
+                    padding: 10px;
+                    bottom: 0px;
+                    width: 100%;
+                    height: 100%;
+                    grid-area: evenMapa;
+                    iframe{
+                        display: block;
+                        padding:0px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*FIN APLICACIÓN MEDIA QUERIE PAGINA EVENTOS*/

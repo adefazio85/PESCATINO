@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "./variables";
+@import "./mixin";
+//RESET GENERAL
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+//SOBREESCRITURA DE CLASES DE BOOSTRAP QUE MODIFICABAN MI PROYECTO
+
+a {
+    text-decoration: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+
+/* ESTRUCTURA GENERAL DEL SITIO WEB*/
+.estructuraBase {
+    @include grid ("encabezado" "contenido" "pieDePagina", 1fr, 84px auto 40px);
+
+    .encabezado {
+        grid-area: encabezado;
+
+        nav {
+            @include grid ("logo menu", 40% 60%, 100%);
+
+            .logo {
+                grid-area: logo;
+            }
+
+            .menu {
+                grid-area: menu;
+            }
+        }
+
+    }
+
+    .contenido {
+        grid-area: contenido;
+    }
+
+    .pieDePagina {
+        grid-area: pieDePagina;
+    }
+}
+
+
+
+
+/*APLICACIÓN MEDIA QUERIE ESTRUCTURA GENERAL*/
+
+
+@media screen and (max-width:1000px) {
+
+    .estructuraBase {
+        @include grid ("encabezado" "contenido" "pieDePagina", 1fr, 90px auto 40px);
+
+        .encabezado {
+            .navBar {
+                @include grid ("logo" "menu", 100%, 70px 20px);
+                .logo{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .estructuraBase {
+        @include grid ("encabezado" "contenido" "pieDePagina", 1fr, 70px auto 40px);
+    }
+}
+
+/*FIN APLICACIÓN MEDIA QUERIE ESTRUCTURA GENERAL*/
