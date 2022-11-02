@@ -295,8 +295,7 @@ h6 {
     .novedades .card .cardImg img {
       border-radius: 3px 3px 0 0;
       width: 30vw;
-      height: 30vw;
-      background-color: red; }
+      height: 30vw; }
     .novedades .card .cardCont {
       font-family: 'Montserrat';
       color: #9c9c9c;
