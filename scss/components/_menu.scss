@@ -118,6 +118,12 @@
                 align-items: center;
                 .logo {
                     justify-content: left;
+                    img {
+                        height: 57px;
+                    }
+                    h1 a {
+                        font-size: 36px;
+                    }
                 }
                 label img {
                     display: block
