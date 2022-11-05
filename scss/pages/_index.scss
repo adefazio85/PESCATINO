@@ -2,11 +2,14 @@
 
 /* Sección Información de la página */
 
-.hero{
+.contenido{
     background-image: url(../images/hero.jpg);
     filter:saturate(65%);
     background-attachment:fixed;
-    background-size: cover;
+    background-size:cover;
+}
+
+.hero{
     height: calc(100vh - 80px);
     font-family: 'Montserrat', sans-serif;
     h2{
@@ -26,13 +29,13 @@
 /* Sección de Novedades y Noticias */
 
 .novedades {
-    background-color: rgb(156, 156, 156); 
+    background-color: $colorPescatino1T3; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     .card {
         margin: 20px 0px 30px 0px;
-        background-color: rgba(0, 0, 0, 0.795);
+        background-color: $colorPescarino1T2;
         border-radius: 3px 3px 0 0;
         border-width: 0px;
         display: flex;
@@ -49,7 +52,7 @@
         }
         .cardCont{
             font-family: 'Montserrat';
-            color: rgb(156, 156, 156);
+            color: $colorPescatino4;
             margin: 5px;
             height: 100%;
             width: 100%;
@@ -58,13 +61,13 @@
             align-items: left;
             h2{
                 margin: 5px 0 10px 0;
-                color: rgb(156, 156, 156);
+                color: $colorPescatino4;
                 font-size: 0.7rem;
                 font-weight: 700;
             }
             p{
                 width: 95%;
-                color: rgb(212, 210, 210);
+                color: $colorPescatino5;
                 text-align: left;
                 font-size: 1rem;
                 font-weight: 400;
@@ -78,7 +81,6 @@
 
 
 /*APLICACIÓN MEDIA QUERIE PAGINA INDEX*/
-
 
 @media screen and (max-width:1000px){
 
@@ -143,7 +145,6 @@
     
     
     .novedades {
-        background-color: rgb(156, 156, 156); 
         display: flex;
         flex-direction: column;
         justify-content: space-around;

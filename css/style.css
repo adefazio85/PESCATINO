@@ -26,6 +26,9 @@ h6 {
   margin-bottom: 0;
   line-height: normal; }
 
+p {
+  margin: 0; }
+
 /* ESTRUCTURA GENERAL DEL SITIO WEB*/
 .estructuraBase {
   display: grid;
@@ -261,11 +264,13 @@ h6 {
 /*FIN APLICACIÓN MEDIA QUERIES PIE DE PAGINA*/
 /*INDEX */
 /* Sección Información de la página */
-.hero {
+.contenido {
   background-image: url(../images/hero.jpg);
   filter: saturate(65%);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; }
+
+.hero {
   height: calc(100vh - 80px);
   font-family: 'Montserrat', sans-serif; }
   .hero h2 {
@@ -280,7 +285,7 @@ h6 {
 
 /* Sección de Novedades y Noticias */
 .novedades {
-  background-color: #9c9c9c;
+  background-color: rgba(0, 0, 0, 0.708);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
@@ -348,7 +353,6 @@ h6 {
     font-size: 1rem; }
   /* Sección de Novedades y Noticias */
   .novedades {
-    background-color: #9c9c9c;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -540,7 +544,7 @@ h6 {
         object-fit: cover; }
       .pagEventos .evento .evenFoto h3 {
         padding-left: 10px;
-        background-color: rgba(0, 0, 0, 0.67);
+        background-color: rgba(0, 0, 0, 0.708);
         border-bottom-left-radius: 5px;
         width: 100%;
         position: absolute;
@@ -810,63 +814,90 @@ h6 {
 
 /*FIN APLICACIÓN MEDIA QUERIE PAGINA GALERIA*/
 .pagContactenos {
+  background-image: url(../images/hero.jpg);
+  filter: saturate(65%);
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
   height: calc(100vh - 80px - 40px);
   min-height: 600px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-family: 'Montserrat';
-  background-color: #9c9c9c; }
+  color: #9c9c9c; }
   .pagContactenos .formulario {
-    width: 40vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.708);
+    width: 45vw;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .pagContactenos .formulario div {
-      display: flex;
-      justify-content: space-around; }
-      .pagContactenos .formulario div div {
-        margin-top: 5px; }
-        .pagContactenos .formulario div div:hover {
-          color: #5a5a5a; }
     .pagContactenos .formulario h2 {
+      width: 90%;
+      align-self: center;
+      margin-top: 10px;
       margin-bottom: 10px;
       font-size: 2rem;
       font-weight: 400; }
-    .pagContactenos .formulario form div {
-      width: 40vw;
+    .pagContactenos .formulario form {
       display: flex;
-      flex-direction: row;
-      padding: 3px; }
-      .pagContactenos .formulario form div label {
-        width: 16vw; }
-      .pagContactenos .formulario form div input {
-        width: 24vw; }
-      .pagContactenos .formulario form div textarea {
-        width: 100%;
-        height: 100%; }
-
-.datos {
-  height: 500px;
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .datos div {
-    width: 40vw;
-    margin-top: 5px; }
-    .datos div img {
-      width: 15px;
-      height: 15px; }
-    .datos div iframe {
-      width: 40vw;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center; }
+      .pagContactenos .formulario form div {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        padding: 3px; }
+        .pagContactenos .formulario form div label {
+          width: 30%; }
+        .pagContactenos .formulario form div input {
+          width: 70%;
+          border-radius: 3px;
+          border: none; }
+        .pagContactenos .formulario form div textarea {
+          resize: none;
+          border-radius: 3px;
+          border: none;
+          width: 100%;
+          height: 100%; }
+    .pagContactenos .formulario div {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
       margin-top: 5px; }
-    .datos div div {
-      margin-top: 5px;
-      display: flex;
-      flex-direction: row; }
+      .pagContactenos .formulario div div p {
+        margin-bottom: 10px; }
+        .pagContactenos .formulario div div p:hover {
+          color: #5a5a5a; }
+  .pagContactenos .datos {
+    background-color: rgba(0, 0, 0, 0.708);
+    height: 550px;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    .pagContactenos .datos div {
+      width: 40vw;
+      margin-top: 35px; }
+      .pagContactenos .datos div img {
+        width: 15px;
+        height: 15px; }
+      .pagContactenos .datos div iframe {
+        border-radius: 3px;
+        border: none;
+        width: 40vw;
+        margin-top: 5px; }
+      .pagContactenos .datos div div {
+        margin-top: 5px;
+        display: flex;
+        align-items: center; }
 
 /* FIN PÁGINA CONTACTENOS */
 @media screen and (max-width: 1000px) {
@@ -874,37 +905,56 @@ h6 {
   .pagContactenos {
     width: 100%;
     height: 100%;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     .pagContactenos .formulario {
+      margin-top: 20px;
       width: 90vw;
-      height: 100%; }
+      height: 100%;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px; }
       .pagContactenos .formulario h2 {
-        margin-top: 15px; }
+        margin-top: 15px;
+        text-align: center; }
       .pagContactenos .formulario form div {
-        width: 90vw; }
+        width: 90%; }
         .pagContactenos .formulario form div label {
           width: 30%; }
         .pagContactenos .formulario form div input {
           width: 70%; }
-  .datos {
-    height: 100%;
-    width: 90vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .datos div {
-      width: 100%;
-      margin-top: 5px; }
-      .datos div img {
-        width: 15px;
-        height: 15px; }
-      .datos div iframe {
-        width: 100%;
-        margin-top: 5px; }
-      .datos div div {
-        margin-top: 5px;
-        display: flex;
-        flex-direction: row; } }
+    .pagContactenos .datos {
+      margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.708);
+      height: 550px;
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px; }
+      .pagContactenos .datos div {
+        width: 90%;
+        margin-top: 35px; }
+        .pagContactenos .datos div img {
+          width: 15px;
+          height: 15px; }
+        .pagContactenos .datos div iframe {
+          border-radius: 3px;
+          border: none;
+          width: 100%;
+          margin-bottom: 20px; }
+        .pagContactenos .datos div div {
+          margin-top: 5px;
+          display: flex;
+          align-items: center; } }
+
+@media screen and (max-width: 700px) {
+  /* Sección principal de página */
+  .pagContactenos .formulario h2 {
+    font-size: 1.5rem; }
+  .pagContactenos .formulario form div {
+    font-size: 0.9rem; }
+  .pagContactenos .datos div div {
+    font-size: 0.7rem; } }
