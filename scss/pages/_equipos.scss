@@ -1,5 +1,12 @@
+.pagEquipos{
+    background-image: url(../images/hero.jpg);
+    filter:saturate(65%);
+    background-attachment:fixed;
+    background-size:cover;
+}
+
 .equiGeneral {
-    background-color:$colorPescatino4;
+    background-color:$colorPescatino1T3;
     width: 100%;
     height: calc(100vh - 80px);
     display: flex;
@@ -54,7 +61,7 @@
 }
 
 .equiCategorias{
-    background-color:$colorPescatino4;
+    background-color:$colorPescatino1T3;
     width: 100%;
     height: 100%;
     display: flex;
@@ -70,7 +77,7 @@
         font-size: 3rem;  
         font-style: italic;
         font-weight: 600;
-        color: $colorPescatino2;
+        color:$colorPescatino4;
     }
     div{
         width: 100%;

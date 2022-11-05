@@ -2,7 +2,10 @@
 /* PÁGINA EVENTOS */
 
 .pagEventos{
-    background-color:$colorPescatino4 ;
+    background-image: url(../images/hero.jpg);
+    filter:saturate(65%);
+    background-attachment:fixed;
+    background-size:cover;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,7 +27,7 @@
         }
     }
     .evento{
-        background-color: $colorPescatino2;
+        background-color: $colorPescatino1T3;
         width: 95vw;
         height: 32vw;
         display: flex;

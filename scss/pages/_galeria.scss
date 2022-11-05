@@ -1,7 +1,7 @@
 /* PÁGINA GALERIA */
 
 .galeria{
-    background-color:rgb(156, 156, 156) ;
+    background-color:$colorPescatino1T3 ;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 17vw ;

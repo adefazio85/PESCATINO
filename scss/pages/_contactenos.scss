@@ -1,10 +1,3 @@
-// .contenido{
-//     background-image: url(../images/hero.jpg);
-//     filter:saturate(65%);
-//     background-attachment:fixed;
-//     background-size:cover;
-// }
-
 .pagContactenos{
     background-image: url(../images/hero.jpg);
     filter:saturate(65%);
@@ -26,9 +19,10 @@
         height: 550px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         h2{
             width: 90%;
+            height: 50px;
             align-self: center;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -36,6 +30,7 @@
             font-weight: 400;
         }
         form{
+            height: 450px;
             display:flex;
             justify-content: space-around;
             flex-direction: column;
@@ -66,10 +61,10 @@
             width: 90%;
             display: flex;
             justify-content: space-around ;
-            margin-top: 5px;
             div{
                 p{
-                    margin-bottom: 10px;
+                    width: 50%;
+                    text-align: center;
                     &:hover{
                         color:$colorPescatino3a;
                     }
@@ -83,18 +78,21 @@
         width: 45vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content:center;
         align-items: center;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        padding-top: 100px;
         div {
             width: 40vw;
-            margin-top: 35px;
+            padding-top: 5px;
             img{
                 width: 15px;
                 height: 15px;
             }
             iframe{
+                height: 322px;
+                margin-bottom: 60px;
                 border-radius: 3px;
                 border: none;
                 width: 40vw;
@@ -124,7 +122,6 @@
 
     /* Sección principal de página */
     .pagContactenos{
-        width: 100%;
         height: 100%;
         flex-direction: column;
         justify-content: center;
@@ -137,37 +134,24 @@
             h2{
                 margin-top: 15px;
                 text-align: center;
-
             }
             form{
                 div{
                     width: 90%;
-                    label{
-                        width: 30%; 
-                    }
-                    input{
-                        width: 70%; 
-                    }
                 }
             }
         }
 
         .datos{
-            margin-bottom: 20px;
-            background-color: $colorPescatino1T3;
-            height: 550px;
+            height: 100%;
             width: 90vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             border-top-right-radius: 0px;
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
+            padding-top: 40px;
 
             div {
                 width: 90%;
-                margin-top: 35px;
                 img{
                     width: 15px;
                     height: 15px;
@@ -204,7 +188,6 @@
                 }
             }
         }
-
         .datos{
             div {
                 div{

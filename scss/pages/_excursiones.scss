@@ -1,7 +1,10 @@
 /* PÁGINA EXCURSIONES */
 
 .pagExcursiones{
-    background-color:$colorPescatino4;
+    background-image: url(../images/hero.jpg);
+    filter:saturate(65%);
+    background-attachment:fixed;
+    background-size:cover;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +13,7 @@
     .excursiones {
         margin-top: 30px;
         margin-bottom: 30px;
-        background-color: $colorPescatino3b; 
+        background-color: $colorPescatino1T3; 
         width: 95%;
         height: 100%;
         display: flex;

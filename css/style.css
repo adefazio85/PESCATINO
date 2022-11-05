@@ -370,8 +370,14 @@ p {
         font-size: 1rem; } }
 
 /*FIN APLICACIÓN MEDIA QUERIE PAGINA INDEX*/
+.pagEquipos {
+  background-image: url(../images/hero.jpg);
+  filter: saturate(65%);
+  background-attachment: fixed;
+  background-size: cover; }
+
 .equiGeneral {
-  background-color: #9c9c9c;
+  background-color: rgba(0, 0, 0, 0.708);
   width: 100%;
   height: calc(100vh - 80px);
   display: flex;
@@ -416,7 +422,7 @@ p {
     background-size: cover; }
 
 .equiCategorias {
-  background-color: #9c9c9c;
+  background-color: rgba(0, 0, 0, 0.708);
   width: 100%;
   height: 100%;
   display: flex;
@@ -432,7 +438,7 @@ p {
     font-size: 3rem;
     font-style: italic;
     font-weight: 600;
-    color: #373737; }
+    color: #9c9c9c; }
   .equiCategorias div {
     width: 100%;
     display: flex;
@@ -502,7 +508,10 @@ p {
 /*FIN APLICACIÓN MEDIA QUERIE PAGINA EQUIPOS*/
 /* PÁGINA EVENTOS */
 .pagEventos {
-  background-color: #9c9c9c;
+  background-image: url(../images/hero.jpg);
+  filter: saturate(65%);
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -522,7 +531,7 @@ p {
       font-weight: 700;
       text-align: left; }
   .pagEventos .evento {
-    background-color: #373737;
+    background-color: rgba(0, 0, 0, 0.708);
     width: 95vw;
     height: 32vw;
     display: flex;
@@ -683,7 +692,10 @@ p {
 /*FIN APLICACIÓN MEDIA QUERIE PAGINA EVENTOS*/
 /* PÁGINA EXCURSIONES */
 .pagExcursiones {
-  background-color: #9c9c9c;
+  background-image: url(../images/hero.jpg);
+  filter: saturate(65%);
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -692,7 +704,7 @@ p {
   .pagExcursiones .excursiones {
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: #636363;
+    background-color: rgba(0, 0, 0, 0.708);
     width: 95%;
     height: 100%;
     display: flex;
@@ -741,7 +753,7 @@ p {
 /*FIN APLICACIÓN MEDIA QUERIE PAGINA EXCURSIONES*/
 /* PÁGINA GALERIA */
 .galeria {
-  background-color: #9c9c9c;
+  background-color: rgba(0, 0, 0, 0.708);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 17vw;
@@ -834,15 +846,17 @@ p {
     height: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: center; }
     .pagContactenos .formulario h2 {
       width: 90%;
+      height: 50px;
       align-self: center;
       margin-top: 10px;
       margin-bottom: 10px;
       font-size: 2rem;
       font-weight: 400; }
     .pagContactenos .formulario form {
+      height: 450px;
       display: flex;
       justify-content: space-around;
       flex-direction: column;
@@ -867,10 +881,10 @@ p {
     .pagContactenos .formulario div {
       width: 90%;
       display: flex;
-      justify-content: space-around;
-      margin-top: 5px; }
+      justify-content: space-around; }
       .pagContactenos .formulario div div p {
-        margin-bottom: 10px; }
+        width: 50%;
+        text-align: center; }
         .pagContactenos .formulario div div p:hover {
           color: #5a5a5a; }
   .pagContactenos .datos {
@@ -882,14 +896,17 @@ p {
     justify-content: center;
     align-items: center;
     border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    border-bottom-right-radius: 10px;
+    padding-top: 100px; }
     .pagContactenos .datos div {
       width: 40vw;
-      margin-top: 35px; }
+      padding-top: 5px; }
       .pagContactenos .datos div img {
         width: 15px;
         height: 15px; }
       .pagContactenos .datos div iframe {
+        height: 322px;
+        margin-bottom: 60px;
         border-radius: 3px;
         border: none;
         width: 40vw;
@@ -903,7 +920,6 @@ p {
 @media screen and (max-width: 1000px) {
   /* Sección principal de página */
   .pagContactenos {
-    width: 100%;
     height: 100%;
     flex-direction: column;
     justify-content: center; }
@@ -918,25 +934,15 @@ p {
         text-align: center; }
       .pagContactenos .formulario form div {
         width: 90%; }
-        .pagContactenos .formulario form div label {
-          width: 30%; }
-        .pagContactenos .formulario form div input {
-          width: 70%; }
     .pagContactenos .datos {
-      margin-bottom: 20px;
-      background-color: rgba(0, 0, 0, 0.708);
-      height: 550px;
+      height: 100%;
       width: 90vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 10px; }
+      border-bottom-left-radius: 10px;
+      padding-top: 40px; }
       .pagContactenos .datos div {
-        width: 90%;
-        margin-top: 35px; }
+        width: 90%; }
         .pagContactenos .datos div img {
           width: 15px;
           height: 15px; }
